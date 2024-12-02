@@ -24,7 +24,7 @@ class ProjectWriteSerializer(WriteOnlySerializer):
     class Meta(WriteOnlySerializer.Meta):
         model = Project
         fields = [
-            "project_client",
+            "client",
             "project_name",
             "team_leader",
             "task_no",

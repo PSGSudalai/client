@@ -6,6 +6,8 @@ from apps.ADMIN.views import (
     InvoiceCUDAPIView,
     ProjectListAPIView,
     ProjectCUDAPIView,
+    MeetingListAPIview,
+    MeetingCUDAPIview,
 
 ) 
 
@@ -29,6 +31,9 @@ router.register('invoice/cud',InvoiceCUDAPIView,basename="invoice-cud")
 
 router.register('project/list',ProjectListAPIView,basename="project-list")
 router.register('project/cud',ProjectCUDAPIView,basename="project-cud")
+
+router.register('meeting/list',MeetingListAPIview,basename="meeting-list")
+router.register('meeting/cud',MeetingCUDAPIview,basename="meeting-cud")
 
 urlpatterns = [
 ] + router.urls

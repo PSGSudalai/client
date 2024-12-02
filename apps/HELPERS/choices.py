@@ -1,7 +1,7 @@
 STATUS = {
     "options":[
         "Pending",
-        "In-progress",
+        "In Progress",
         "Completed",
     ]
 }
