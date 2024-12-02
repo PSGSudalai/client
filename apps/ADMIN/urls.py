@@ -1,8 +1,17 @@
 from django.urls import path
-from apps.ADMIN.views import  ClientListAPIView,ClientCUDAPIView
+from apps.ADMIN.views import (
+    ClientListAPIView,
+    ClientCUDAPIView,
+    InvoiceListAPIView,
+    InvoiceCUDAPIView,
+    ProjectListAPIView,
+    ProjectCUDAPIView,
+
+) 
 
 
 from rest_framework.routers import DefaultRouter, SimpleRouter
+
 
 
 
@@ -13,6 +22,13 @@ API_URL_PREFIX = "api/"
 router = SimpleRouter()
 router.register('client/list',ClientListAPIView,basename="client-list")
 router.register('client/cud',ClientCUDAPIView,basename="client-cud")
+
+router.register('invoice/list',InvoiceListAPIView,basename="invoice-list")
+router.register('invoice/cud',InvoiceCUDAPIView,basename="invoice-cud")
+
+
+router.register('project/list',ProjectListAPIView,basename="project-list")
+router.register('project/cud',ProjectCUDAPIView,basename="project-cud")
 
 urlpatterns = [
 ] + router.urls
