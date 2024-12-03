@@ -5,3 +5,14 @@ STATUS = {
         "Completed",
     ]
 }
+
+
+
+
+ACKNOWLEDGEMENT ={
+    "options":[
+        "Waiting for Approval",
+        "Approved"
+    ]
+}
+

@@ -6,7 +6,7 @@ from django.db import models
 from apps.HELPERS.choices import STATUS
 
 class Meeting(BaseModel):
-    project_meeting = models.ForeignKey(Project,on_delete=models.SET_NULL,**DEFAULT_BLANK_NULLABLE_FIELD_CONFIG)
+    project_name = models.ForeignKey(Project,on_delete=models.SET_NULL,**DEFAULT_BLANK_NULLABLE_FIELD_CONFIG)
     client_name = models.ForeignKey(Client,on_delete=models.SET_NULL,**DEFAULT_BLANK_NULLABLE_FIELD_CONFIG)
     title = models.CharField(max_length=MAX_CHAR_FIELD_LENGTH,**DEFAULT_BLANK_NULLABLE_FIELD_CONFIG)
     date = models.DateField(**DEFAULT_BLANK_NULLABLE_FIELD_CONFIG)

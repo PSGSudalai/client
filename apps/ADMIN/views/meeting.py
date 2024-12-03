@@ -8,10 +8,11 @@ class MeetingListAPIView(ListAPIViewSet):
     serializer_class = MeetingReadSerializer
 
     all_table_columns={
-        "client_name.name":"Client Name",
-        "project_meeting.project_name":"Project Name",
+        "client.name":"Client Name",
+        "project.project_name":"Project Name",
         "description":"Description",
         "date":"Date",
+        "team":"Team",
         "start_time":"Time",
         "status":"Status"
     }
