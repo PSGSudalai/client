@@ -1,7 +1,18 @@
 STATUS = {
     "options":[
         "Pending",
-        "In-progress",
+        "In Progress",
         "Completed",
     ]
 }
+
+
+
+
+ACKNOWLEDGEMENT ={
+    "options":[
+        "Waiting for Approval",
+        "Approved"
+    ]
+}
+

@@ -1,3 +1,4 @@
 from .client import ClientReadSerializer,ClientWriteSerializer
 from .invoice import InvoiceReadSerializer,InvoiceWriteSerializer
-from .project import ProjectReadSerializer,ProjectWriteSerializer
+from .project import ProjectWriteSerializer,ProjectReadSerializer
+from .meeting import MeetingWriteSerializer,MeetingReadSerializer
