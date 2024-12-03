@@ -27,11 +27,11 @@ class ProjectWriteSerializer(WriteOnlySerializer):
         fields = [
             "client",
             "project_name",
-            # "team_leader",
-            # "task_no",
-            # "total_budget",
-            # "start_date",
-            # "deadline",
+            "team_leader",
+            "task_no",
+            "total_budget",
+            "start_date",
+            "deadline",
             "description",
         ]
         
